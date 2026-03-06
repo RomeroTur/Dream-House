@@ -12,8 +12,50 @@
     <!-- Behzad Bereich START -->
     <!-- Header -->
     <!-- ========================= -->
-    <header id="site-header">
-      <!-- Navbar -->
+
+    <header id="site-header" class="w-full pt-8">
+      <div
+        class="mx-auto flex max-w-[1200px] items-center justify-between px-6"
+      >
+        <!-- Logo -->
+        <a href="#">
+          <img src="assets/images/logo.svg" alt="Dwello Logo" class="h-7" />
+        </a>
+
+        <!-- Navigation -->
+        <nav class="md:block">
+          <ul class="flex items-center gap-12 text-[18px] font-medium">
+            <li><a href="#" class="hover:opacity-70">Home</a></li>
+            <li><a href="#" class="hover:opacity-70">Service</a></li>
+            <li><a href="#" class="hover:opacity-70">Agents</a></li>
+            <li><a href="#" class="hover:opacity-70">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right actions -->
+        <div class="flex items-center gap-6">
+          <button aria-label="Search" class="flex items-center justify-center">
+            <img
+              src="assets/images/search.svg"
+              alt="Search icon"
+              class="h-6 w-6"
+            />
+          </button>
+
+          <button
+            aria-label="User account"
+            class="flex items-center justify-center"
+          >
+            <img src="assets/images/user.svg" alt="User icon" class="h-6 w-6" />
+          </button>
+
+          <button
+            class="bg-[#2B1B12] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
+          >
+            Sign up
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
