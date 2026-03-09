@@ -1,0 +1,50 @@
+.footer__col a {
+	display: flex;
+	font-size: 18px;
+	line-height: 1em;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.footer__col a:last-of-type {
+	margin-bottom: 0;
+}
+
+.footer__col__heading {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 1em;
+	margin-bottom: 1.8rem;
+}
+
+#footer__logo__container {
+	margin-bottom: 1.8rem;
+}
+
+#footer__slogan {
+	font-size: 18px;
+	line-height: 1em;
+	font-weight: bold;
+}
+
+#help-form__form button {
+	border: 2px solid #000;
+	background-color: #000;
+	color: #fff;
+	line-height: 1em;
+	padding: 0.65rem 2rem;
+	border-radius: 7px;
+
+	transition: all 0.1s;
+}
+
+#help-form__form button:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.h2 {
+	font-weight: bold;
+	font-size: clamp(2rem, 1.6735rem + 1.6327vw, 3rem);
+	line-height: 1.25em;
+}
