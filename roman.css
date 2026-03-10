@@ -1,15 +1,48 @@
+:root {
+	--dark-brown: #2b1b12;
+	--brown: #4f3527;
+	--brown_alt: #543e32;
+	--dark-beige: #c9b3a3;
+}
+
+@theme {
+	--color-dark-brown: #2b1b12;
+}
+
 @font-face {
 	font-family: "Montserrat";
 	src: url("./assets/fonts/Montserrat-SemiBold.ttf");
-	font-weight:;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat-Bold.ttf");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat-ExtraBold.ttf");
+	font-weight: 800;
+}
+
+footer {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
 }
 
 .footer__col a {
 	display: flex;
 	font-size: 18px;
 	line-height: 1em;
-	font-weight: bold;
+	font-weight: 700;
 	margin-bottom: 1rem;
+	color: var(--brown);
+}
+
+.footer__col a:hover {
+	text-decoration: underline;
 }
 
 .footer__col a:last-of-type {
@@ -17,10 +50,11 @@
 }
 
 .footer__col__heading {
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 22px;
 	line-height: 1em;
 	margin-bottom: 1.8rem;
+	color: var(--color-dark-brown);
 }
 
 #footer__logo__container {
@@ -31,27 +65,88 @@
 	font-size: 18px;
 	line-height: 1em;
 	font-weight: bold;
+	color: var(--brown);
+}
+
+.input-wrapper {
+	position: relative;
+}
+
+.input-wrapper::before {
+	content: "";
+	position: absolute;
+	left: 0.85rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.45rem;
+	height: 1.45rem;
+	background-image: url(./assets/images/mail-icon.png);
+	background-size: cover;
+}
+
+.input-wrapper input {
+	background-color: var(--dark-beige);
+	color: var(--brown_alt);
+	border-radius: 0.5rem;
+	padding: 0.8rem 1rem 1.2rem 3rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.input-wrapper input::placeholder {
+	color: var(--brown_alt);
 }
 
 #help-form__form button {
-	border: 2px solid #000;
-	background-color: #000;
+	border: 2px solid var(--dark-brown);
+	background-color: var(--dark-brown);
 	color: #fff;
 	line-height: 1em;
-	padding: 0.65rem 2rem;
-	border-radius: 7px;
+	padding: 1rem 2.5rem;
+	border-radius: 0.5rem;
 	cursor: pointer;
+	font-weight: 600;
+	font-size: 1.2rem;
 
 	transition: all 0.1s;
 }
 
 #help-form__form button:hover {
 	background-color: #fff;
-	color: #000;
+	color: var(--dark-brown);
+}
+#help-form__links {
+}
+
+#help-form__links .link-wrapper {
+	position: relative;
+	padding: 1rem 1rem 1rem 2.5rem;
+}
+
+#help-form__links a {
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1em;
+	color: var(--brown_alt);
+}
+
+#help-form__links a::before {
+	content: "";
+	background-image: url(./assets/images/badge-icon.png);
+	width: 1.6rem;
+	height: 1.6rem;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-size: cover;
+	background-position: center;
 }
 
 .h2 {
-	font-weight: bold;
-	font-size: clamp(2rem, 1.6735rem + 1.6327vw, 3rem);
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: clamp(2rem, 1.6735rem + 1.6327vw, 2.5rem);
 	line-height: 1.25em;
+	color: var(--dark-brown);
 }
