@@ -1,3 +1,9 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat-SemiBold.ttf");
+	font-weight:;
+}
+
 .footer__col a {
 	display: flex;
 	font-size: 18px;
@@ -34,6 +40,7 @@
 	line-height: 1em;
 	padding: 0.65rem 2rem;
 	border-radius: 7px;
+	cursor: pointer;
 
 	transition: all 0.1s;
 }
