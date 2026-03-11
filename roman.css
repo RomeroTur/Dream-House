@@ -2,7 +2,8 @@
 	--dark-brown: #2b1b12;
 	--brown: #4f3527;
 	--brown_alt: #543e32;
-	--dark-beige: #c9b3a3;
+	--dark-beige: #ddc7bb;
+	--beige: #fef7f2;
 }
 
 @theme {
@@ -30,6 +31,11 @@
 footer {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
+	background-color: var(--dark-beige);
+}
+
+.footer__col {
+	margin-bottom: 2rem;
 }
 
 .footer__col a {
@@ -37,7 +43,7 @@ footer {
 	font-size: 18px;
 	line-height: 1em;
 	font-weight: 700;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	color: var(--brown);
 }
 
@@ -53,7 +59,7 @@ footer {
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 1em;
-	margin-bottom: 1.8rem;
+	margin-bottom: 2.4rem;
 	color: var(--color-dark-brown);
 }
 
@@ -149,4 +155,149 @@ footer {
 	font-size: clamp(2rem, 1.6735rem + 1.6327vw, 2.5rem);
 	line-height: 1.25em;
 	color: var(--dark-brown);
+}
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.testimonials__entry {
+	border-radius: 1.2rem;
+	background-color: var(--dark-beige);
+	overflow: hidden;
+	font-family: "Montserrat", sans-serif;
+	font-size: clamp(0.875rem, 0.8367rem + 0.1633vw, 1rem);
+	color: var(--brown);
+}
+
+.testimonials__entry__teaser-img img {
+	aspect-ratio: 382/169;
+	object-fit: cover;
+	object-position: center;
+}
+
+.testimonials__entry__data .name {
+	font-weight: 700;
+	font-size: clamp(1rem, 0.9235rem + 0.3265vw, 1.25rem);
+	color: var(--dark-brown);
+	line-height: 1em;
+}
+
+.testimonials__entry__data .place {
+	color: var(--dark-brown);
+	line-height: 1em;
+	font-weight: 700;
+	font-size: clamp(0.875rem, 0.8367rem + 0.1633vw, 1rem);
+}
+
+.testimonials__entry__data .rating {
+	background-color: #fff;
+	display: flex;
+	column-gap: 0.4rem;
+	align-items: center;
+	border-radius: 0.25rem;
+	padding: 0.1rem 0.4rem;
+	justify-content: space-between;
+}
+
+.residence__entry {
+	border-radius: 1.2rem;
+	background-color: var(--dark-beige);
+	overflow: hidden;
+	font-family: "Montserrat", sans-serif;
+	font-size: clamp(0.875rem, 0.8367rem + 0.1633vw, 1rem);
+	color: var(--brown);
+	box-shadow: 0px 4px 30px 0 rgba(43, 27, 18, 0.12);
+}
+
+.residence__entry__teaser-img img {
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	object-position: center;
+}
+
+.residence__entry__data .place {
+	position: relative;
+	color: var(--dark-brown);
+	line-height: 1em;
+	font-weight: 700;
+	font-size: clamp(1rem, 0.9375rem + 0.3125vw, 1.25rem);
+	padding-left: 2rem;
+}
+
+.residence__entry__data .place::before {
+	content: "";
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url("./assets/images/location.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	left: 0;
+}
+
+.residence__entry__data .icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 4px;
+	background-color: #fff;
+	margin-right: 0.65rem;
+}
+
+.residence__entry__data button {
+	border-radius: 0.5rem;
+	background-color: var(--dark-brown);
+	color: #fff;
+	font-weight: 600;
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.9rem;
+	line-height: 1em;
+	padding: 0.8rem 1.35rem;
+	cursor: pointer;
+}
+
+.residence__entry__data .price {
+	position: relative;
+	color: var(--dark-brown);
+	line-height: 1em;
+	font-weight: 700;
+	font-size: clamp(1.0625rem, 0.9844rem + 0.3906vw, 1.375rem);
+}
+
+#testimonials .btn {
+	background-color: var(--dark-brown);
+	width: clamp(2.5rem, calc(2.156rem + 1.469vw), 3.625rem);
+	height: clamp(2.5rem, calc(2.156rem + 1.469vw), 3.625rem);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+footer #social a {
+	display: flex;
+	align-items: center;
+}
+
+footer #social a img {
+	margin-right: 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.testimonials__entry__data .name {
+		margin-bottom: clamp(0rem, -0.4027rem + 2.0134vw, 0.5625rem);
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.footer__col {
+		margin-bottom: 0;
+	}
 }
