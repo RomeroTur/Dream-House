@@ -1,496 +1,1061 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dream House</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dream House</title>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
 
-  <body class="bg-white text-black">
-    <!-- ========================= -->
-    <!-- Behzad Bereich START -->
-    <!-- Header -->
-    <!-- ========================= -->
+	<body class="bg-white text-black">
+		<!-- ========================= -->
+		<!-- Behzad Bereich START -->
+		<!-- Header -->
+		<!-- ========================= -->
 
-    <header id="site-header" class="w-full bg-[#FEF7F2] pt-8">
-      <div
-        class="mx-auto flex max-w-[1200px] items-center justify-between px-6"
-      >
-        <!-- Logo -->
-        <a href="#">
-          <img src="assets/images/logo.svg" alt="Dwello Logo" class="h-7" />
-        </a>
-
-        <!-- Navigation -->
-        <nav class="md:block">
-          <ul class="flex items-center gap-12 text-[18px] font-medium">
-            <li><a href="#" class="hover:opacity-70">Home</a></li>
-            <li>
-              <a href="#" class="hover:opacity-70">Service</a>
-            </li>
-            <li><a href="#" class="hover:opacity-70">Agents</a></li>
-            <li>
-              <a href="#" class="hover:opacity-70">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Right actions -->
-        <div class="flex items-center gap-6">
-          <button aria-label="Search" class="flex items-center justify-center">
-            <img
-              src="assets/images/search.svg"
-              alt="Search icon"
-              class="h-6 w-6"
-            />
-          </button>
-
-          <button
-            aria-label="User account"
-            class="flex items-center justify-center"
-          >
-            <img src="assets/images/user.svg" alt="User icon" class="h-6 w-6" />
-          </button>
-
-          <button
-            class="bg-[#2B1B12] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
-          >
-            Sign up
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <!-- ========================= -->
-      <!-- Behzad Bereich START -->
-      <!-- ========================= -->
-
-      <!-- Hero Section -->
-      <section id="hero" class="bg-[#FEF7F2] pt-12">
-        <div class="mx-auto flex max-w-[1320px] items-center justify-between">
-          <!-- Left content -->
-          <div class="flex flex-col pl-20">
-            <h1
-              class="max-w-[514px] text-[74px] leading-[100%] font-extrabold text-[#2B1B12]"
-            >
-              Find Your Dream Home
-            </h1>
-
-            <p
-              class="mt-6 max-w-[413px] text-[18px] leading-[160%] font-bold text-[#4F3527]"
-            >
-              Explore our curated selection of exquisite properties meticulously
-              tailored to your unique dream home vision
-            </p>
-
-            <button
-              class="mt-10 h-[58px] w-[176px] rounded-lg bg-[#2B1B12] text-white text-[18px] font-semibold transition hover:opacity-90"
-            >
-              Sign up
-            </button>
-          </div>
-
-          <!-- Right image -->
-          <div class="flex justify-end">
-            <img
-              src="./assets/images/hero.png"
-              alt="Modern luxury house with pool"
-              class="w-[760px] h-auto"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Search Filter Section -->
-      <section id="search-filter" class="bg-[#FEF7F2]">
-        <div class="mx-auto max-w-[1320px] px-6">
-          <div
-            class="mx-auto mt-[-80px] flex h-[160px] w-[1070px] items-start rounded-[18px] bg-[#DDC7BB] pl-[30px] pt-[45px] shadow-[0_8px_30px_rgba(43,27,18,0.12)]"
-          >
-            <!-- Location -->
-            <div
-              class="flex h-[58px] w-[252px] items-center justify-between rounded-[8px] bg-[#FBF5F1] px-[15px]"
-            >
-              <span
-                class="text-[18px] font-bold leading-[100%] tracking-[0] text-[#695346]"
-              >
-                Location
-              </span>
-              <img
-                src="assets/images/location.svg"
-                alt="Location icon"
-                class="h-[22px] w-[22px]"
-              />
-            </div>
-            <!-- Type -->
-            <div
-              class="ml-[54px] flex h-[58px] w-[252px] items-center justify-between rounded-[8px] bg-[#FBF5F1] px-[15px]"
-            >
-              <span
-                class="text-[18px] font-bold leading-[100%] tracking-[0] text-[#695346]"
-              >
-                Type
-              </span>
-              <img
-                src="assets/images/home.svg"
-                alt="Home icon"
-                class="h-[22px] w-[22px]"
-              />
-            </div>
-            <!-- Price Range -->
-
-            <div
-              class="ml-[24px] flex h-[58px] w-[252px] items-center justify-between rounded-[8px] bg-[#FBF5F1] px-[15px]"
-            >
-              <span
-                class="text-[18px] font-bold leading-[100%] tracking-[0] text-[#695346]"
-              >
-                Price Range
-              </span>
-              <img
-                src="assets/images/price.svg"
-                alt="Price icon"
-                class="h-[22px] w-[22px]"
-              />
-            </div>
-
-            <!-- Sign up button -->
-
-            <button
-              class="ml-6 flex h-[58px] w-[156px] items-center justify-center rounded-[8px] bg-[#2B1B12] text-[18px] font-semibold leading-[100%] tracking-[0] text-white transition hover:opacity-90"
-            >
-              Sign up
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- We Help You To Find Your Dream Home -->
-
-      <section id="dream-home-info" class="py-24">
-        <div class="mx-auto max-w-[1320px] px-6 flex items-center gap-20">
-          <!-- Image -->
-          <div class="w-1/2">
-            <img
-              src="assets/images/dream-home-info.png"
-              alt="Dream Home"
-              class="rounded-2xl w-full object-cover"
-            />
-          </div>
-
-          <!-- Content -->
-          <div class="w-1/2">
-            <!-- Title -->
-            <h2
-              class="font-montserrat text-[40px] font-extrabold leading-[140%] text-[#2B1B12] max-w-[514px]"
-            >
-              We Help You To Find Your Dream Home
-            </h2>
-
-            <!-- Paragraph -->
-            <p
-              class="mt-6 text-[18px] leading-[160%] font-bold text-[#4F3527] max-w-[514px]"
-            >
-              From cozy cottages to luxurious estates, our dedicated team guides
-              you through every step of the journey, ensuring your dream home
-              becomes a reality
-            </p>
-
-            <!-- Stats -->
-            <div class="flex gap-16 mt-10">
-              <!-- Stat 1 -->
-              <div>
-                <h3 class="text-[48px] font-bold text-[#4F3527]">8K+</h3>
-                <p class="text-[18px] font-semibold text-[#4F3527]">
-                  Houses Available
-                </p>
-              </div>
-              <!-- Stat 2 -->
-              <div>
-                <h3 class="text-[48px] font-bold text-[#4F3527]">6K+</h3>
-                <p class="text-[18px] font-semibold text-[#4F3527]">
-                  Houses Sold
-                </p>
-              </div>
-
-              <!-- Stat 3 -->
-              <div>
-                <h3 class="text-[48px] font-bold text-[#4F3527]">2K+</h3>
-                <p class="text-[18px] font-semibold text-[#4F3527]">
-                  Trusted Agents
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why Choose Us -->
-      <section id="why-choose-us">
-        <div class="mx-auto max-w-[1320px] px-6">
-          <!-- Title -->
-          <h2
-            class="text-center font-montserrat text-[40px] font-extrabold leading-[140%] text-[#2B1B12]"
-          >
-            Why Choose Us
-          </h2>
-
-          <!-- Paragraph -->
-          <p
-            class="mx-auto mt-4 max-w-[629px] text-center font-montserrat text-[18px] font-bold leading-[160%] text-[#4F3527]"
-          >
-            Elevating Your Home Buying Experience with Expertise, Integrity, and
-            Unmatched Personalized Service
-          </p>
-        </div>
-      </section>
-
-      <!-- Why Choose Us Cards -->
-
-      <section id="why-choose-us-cards" class="mt-16 pb-24">
-        <div class="mx-auto flex max-w-[1320px] px-6 gap-6">
-          <!-- Card 1 -->
-          <div
-            class="h-[268px] w-[275px] rounded-[18px] bg-[#DDC7BB] shadow-[0_4px_30px_rgba(43,27,18,0.12)]"
-          >
-            <img
-              src="assets/images/map-pin.svg"
-              alt="Expert Guidance"
-              class="ml-[39px] mt-[46px] h-[52px] w-[53px]"
-            />
-
-            <h3
-              class="ml-6 mt-9 h-[22px] w-[158px] font-montserrat text-[18px] font-bold leading-[100%] text-[#2B1B12]"
-            >
-              Expert Guidance
-            </h3>
-
-            <p
-              class="ml-6 mt-3 h-[63px] w-[227px] font-montserrat text-[16px] font-semibold leading-[130%] text-[#4F3527]"
-            >
-              Benefit from our team’s seasoned expertise for a smooth buying
-              experience
-            </p>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="h-[268px] w-[275px] rounded-[18px] bg-[#DDC7BB] shadow-[0_4px_30px_rgba(43,27,18,0.12)]"
-          >
-            <img
-              src="assets/images/service.svg"
-              alt="Personalized Service"
-              class="ml-[39px] mt-[46px] h-[52px] w-[53px]"
-            />
-
-            <h3
-              class="ml-6 mt-9 h-[22px] w-[227px] font-montserrat text-[18px] font-bold leading-[100%] text-[#2B1B12]"
-            >
-              Personalized Service
-            </h3>
-
-            <p
-              class="ml-6 mt-3 h-[63px] w-[227px] font-montserrat text-[16px] font-semibold leading-[130%] text-[#4F3527]"
-            >
-              Our services adapt to your unique needs, making your journey
-              stress-free
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="h-[268px] w-[275px] rounded-[18px] bg-[#DDC7BB] shadow-[0_4px_30px_rgba(43,27,18,0.12)]"
-          >
-            <img
-              src="assets/images/document.svg"
-              alt="Transparent Process"
-              class="ml-[39px] mt-[46px] h-[52px] w-[53px]"
-            />
-
-            <h3
-              class="ml-6 mt-9 h-[22px] w-[227px] font-montserrat text-[18px] font-bold leading-[100%] text-[#2B1B12]"
-            >
-              Transparent Process
-            </h3>
-
-            <p
-              class="ml-6 mt-3 h-[63px] w-[227px] font-montserrat text-[16px] font-semibold leading-[130%] text-[#4F3527]"
-            >
-              Stay informed with our clear and honest approach to buying your
-              home
-            </p>
-          </div>
-
-          <!-- Card 4 -->
-          <div
-            class="h-[268px] w-[275px] rounded-[18px] bg-[#DDC7BB] shadow-[0_4px_30px_rgba(43,27,18,0.12)]"
-          >
-            <img
-              src="assets/images/handshake.svg"
-              alt="Exceptional Support"
-              class="ml-[39px] mt-[46px] h-[52px] w-[53px]"
-            />
-
-            <h3
-              class="ml-6 mt-9 h-[22px] w-[227px] font-montserrat text-[18px] font-bold leading-[100%] text-[#2B1B12]"
-            >
-              Exceptional Support
-            </h3>
-
-            <p
-              class="ml-6 mt-3 h-[63px] w-[227px] font-montserrat text-[16px] font-semibold leading-[130%] text-[#4F3527]"
-            >
-              Providing peace of mind with our responsive and attentive customer
-              service
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========================= -->
-      <!-- Behzad Bereich END -->
-      <!-- ========================= -->
-
-      <!-- ========================= -->
-      <!-- Roman Bereich START -->
-      <!-- ========================= -->
-
-      <!-- Our Popular Residences -->
-      <section id="popular-residences"></section>
-
-      <!-- What People Say About Dwello -->
-      <section id="testimonials"></section>
-
-      <!-- Questions / Help Form -->
-      <section id="help-form">
-        <div
-          class="flex items-center flex-col mx-auto max-w-[1320px] py-16 px-6 xl:py-24"
-        >
-          <div>
-            <p class="h2 text-center">
-              Do You Have Any Questions?<br />
-              Get Help From Us
-            </p>
-          </div>
-          <div class="flex">
-            <a href="#">Chat live with our support team</a>
-            <a href="#">Browse our FAQ</a>
-          </div>
-          <div id="help-form__form">
-            <input class="bg-[#c9b3a3]" type="text" />
-            <button type="submit">Submit</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========================= -->
-      <!-- Roman Bereich END -->
-      <!-- ========================= -->
-    </main>
-    <footer class="bg-[#c9b3a3]">
-      <div class="mx-auto max-w-[1320px] py-16 px-6 xl:py-24">
-        <div
-          class="grid gap-x-6 gap-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6"
-        >
-          <div
-            class="footer__col col-span-1 sm:col-span-2 lg:col-span-4 xl:col-span-2 xl:pr-6"
-          >
-            <div id="footer__logo__container">
-              <a href="#">
-                <img src="assets/images/logo.svg" alt="Dwello Logo" />
-              </a>
-            </div>
-            <div id="footer__slogan">
-              <p>
-                Bringing you closer to your dream home, one click at a time.
-              </p>
-            </div>
-          </div>
-          <div class="footer__col">
-            <p class="footer__col__heading">About</p>
-            <a href="#">Our Story</a>
-            <a href="#">Careers</a>
-            <a href="#">Our Team</a>
-            <a href="#">Resources</a>
-          </div>
-          <div class="footer__col">
-            <p class="footer__col__heading">Support</p>
-            <a href="#">FAQ</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Help Center</a>
-            <a href="#">Terms of Service</a>
-          </div>
-          <div class="footer__col">
-            <p class="footer__col__heading">Find Us</p>
-            <a href="#">Events</a>
-            <a href="#">Locations</a>
-            <a href="#">Newsletter</a>
-          </div>
-          <div class="footer__col">
-            <p class="footer__col__heading">Our Social</p>
-            <a href="#"><span>📷</span>Instagram</a>
-            <a href="#"><span>📘</span>Facebook</a>
-            <a href="#"><span>✖</span>Twitter (x)</a>
-          </div>
-        </div>
-      </div>
-      <!--<div
-				class="max-w-6xl mx-auto grid grid-cols-5 gap-12 px-6 text-gray-800"
+		<header id="site-header" class="w-full bg-[#FEF7F2] pt-8">
+			<div
+				class="mx-auto flex max-w-[1200px] items-center justify-between px-6"
 			>
-				<div>
-					<h2 class="text-xl font-bold mb-4">Dwello</h2>
-					<p class="text-sm leading-relaxed">
-						Bringing you closer to your dream home, one click at a
-						time.
+				<!-- Logo -->
+				<a href="#">
+					<img
+						src="assets/images/logo.svg"
+						alt="Dwello Logo"
+						class="h-7"
+					/>
+				</a>
+
+				<!-- Navigation -->
+				<nav class="md:block">
+					<ul
+						class="flex items-center gap-12 text-[18px] font-medium"
+					>
+						<li><a href="#" class="hover:opacity-70">Home</a></li>
+						<li>
+							<a href="#" class="hover:opacity-70">Service</a>
+						</li>
+						<li><a href="#" class="hover:opacity-70">Agents</a></li>
+						<li>
+							<a href="#" class="hover:opacity-70">Contact</a>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Right actions -->
+				<div class="flex items-center gap-6">
+					<button
+						aria-label="Search"
+						class="flex items-center justify-center"
+					>
+						<img
+							src="assets/images/search.svg"
+							alt="Search icon"
+							class="h-6 w-6"
+						/>
+					</button>
+
+					<button
+						aria-label="User account"
+						class="flex items-center justify-center"
+					>
+						<img
+							src="assets/images/user.svg"
+							alt="User icon"
+							class="h-6 w-6"
+						/>
+					</button>
+
+					<button
+						class="bg-[#2B1B12] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
+					>
+						Sign up
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!-- ========================= -->
+			<!-- Behzad Bereich START -->
+			<!-- ========================= -->
+
+			<!-- Hero Section -->
+			<section id="hero" class="bg-[#FEF7F2] pt-12">
+				<div
+					class="mx-auto flex max-w-[1320px] items-center justify-between"
+				>
+					<!-- Left content -->
+					<div class="flex flex-col pl-20">
+						<h1
+							class="max-w-[514px] text-[74px] leading-[100%] font-extrabold text-[#2B1B12]"
+						>
+							Find Your Dream Home
+						</h1>
+
+						<p
+							class="mt-6 max-w-[413px] text-[18px] leading-[160%] font-bold text-[#4F3527]"
+						>
+							Explore our curated selection of exquisite
+							properties meticulously tailored to your unique
+							dream home vision
+						</p>
+
+						<button
+							class="mt-10 h-[58px] w-[176px] rounded-lg bg-[#2B1B12] text-white text-[18px] font-semibold transition hover:opacity-90"
+						>
+							Sign up
+						</button>
+					</div>
+
+					<!-- Right image -->
+					<div class="flex justify-end">
+						<img
+							src="./assets/images/hero.png"
+							alt="Modern luxury house with pool"
+							class="w-[760px] h-auto"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- Search Filter Section -->
+			<section id="search-filter" class="bg-[#FEF7F2]">
+				<div class="mx-auto max-w-[1320px] px-6">
+					<div
+						class="mx-auto mt-[-80px] flex h-[160px] w-[1070px] items-start rounded-[18px] bg-[#DDC7BB] pl-[30px] pt-[45px] shadow-[0_8px_30px_rgba(43,27,18,0.12)]"
+					>
+						<!-- Location -->
+						<div
+							class="flex h-[58px] w-[252px] items-center justify-between rounded-[8px] bg-[#FBF5F1] px-[15px]"
+						>
+							<span
+								class="text-[18px] font-bold leading-[100%] tracking-[0] text-[#695346]"
+							>
+								Location
+							</span>
+							<img
+								src="assets/images/location.svg"
+								alt="Location icon"
+								class="h-[22px] w-[22px]"
+							/>
+						</div>
+						<!-- Type -->
+						<div
+							class="ml-[54px] flex h-[58px] w-[252px] items-center justify-between rounded-[8px] bg-[#FBF5F1] px-[15px]"
+						>
+							<span
+								class="text-[18px] font-bold leading-[100%] tracking-[0] text-[#695346]"
+							>
+								Type
+							</span>
+							<img
+								src="assets/images/home.svg"
+								alt="Home icon"
+								class="h-[22px] w-[22px]"
+							/>
+						</div>
+						<!-- Price Range -->
+
+						<div
+							class="ml-[24px] flex h-[58px] w-[252px] items-center justify-between rounded-[8px] bg-[#FBF5F1] px-[15px]"
+						>
+							<span
+								class="text-[18px] font-bold leading-[100%] tracking-[0] text-[#695346]"
+							>
+								Price Range
+							</span>
+							<img
+								src="assets/images/price.svg"
+								alt="Price icon"
+								class="h-[22px] w-[22px]"
+							/>
+						</div>
+
+						<!-- Sign up button -->
+
+						<button
+							class="ml-6 flex h-[58px] w-[156px] items-center justify-center rounded-[8px] bg-[#2B1B12] text-[18px] font-semibold leading-[100%] tracking-[0] text-white transition hover:opacity-90"
+						>
+							Sign up
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- We Help You To Find Your Dream Home -->
+
+			<section id="dream-home-info" class="py-24">
+				<div
+					class="mx-auto max-w-[1320px] px-6 flex items-center gap-20"
+				>
+					<!-- Image -->
+					<div class="w-1/2">
+						<img
+							src="assets/images/dream-home-info.png"
+							alt="Dream Home"
+							class="rounded-2xl w-full object-cover"
+						/>
+					</div>
+
+					<!-- Content -->
+					<div class="w-1/2">
+						<!-- Title -->
+						<h2
+							class="font-montserrat text-[40px] font-extrabold leading-[140%] text-[#2B1B12] max-w-[514px]"
+						>
+							We Help You To Find Your Dream Home
+						</h2>
+
+						<!-- Paragraph -->
+						<p
+							class="mt-6 text-[18px] leading-[160%] font-bold text-[#4F3527] max-w-[514px]"
+						>
+							From cozy cottages to luxurious estates, our
+							dedicated team guides you through every step of the
+							journey, ensuring your dream home becomes a reality
+						</p>
+
+						<!-- Stats -->
+						<div class="flex gap-16 mt-10">
+							<!-- Stat 1 -->
+							<div>
+								<h3
+									class="text-[48px] font-bold text-[#4F3527]"
+								>
+									8K+
+								</h3>
+								<p
+									class="text-[18px] font-semibold text-[#4F3527]"
+								>
+									Houses Available
+								</p>
+							</div>
+							<!-- Stat 2 -->
+							<div>
+								<h3
+									class="text-[48px] font-bold text-[#4F3527]"
+								>
+									6K+
+								</h3>
+								<p
+									class="text-[18px] font-semibold text-[#4F3527]"
+								>
+									Houses Sold
+								</p>
+							</div>
+
+							<!-- Stat 3 -->
+							<div>
+								<h3
+									class="text-[48px] font-bold text-[#4F3527]"
+								>
+									2K+
+								</h3>
+								<p
+									class="text-[18px] font-semibold text-[#4F3527]"
+								>
+									Trusted Agents
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Why Choose Us -->
+			<section id="why-choose-us"></section>
+
+			<!-- Why Choose Us Cards -->
+			<section id="why-choose-us-cards"></section>
+
+			<!-- ========================= -->
+			<!-- Behzad Bereich END -->
+			<!-- ========================= -->
+
+			<!-- ========================= -->
+			<!-- Roman Bereich START -->
+			<!-- ========================= -->
+
+			<!-- Our Popular Residences -->
+			<section id="residences">
+				<div class="mx-auto max-w-[1320px] py-16 px-6 xl:py-24">
+					<div class="mb-10 md:mb-13 xl:mb-16">
+						<p class="h2 text-center">Our Popular Residences</p>
+					</div>
+					<div
+						id=""
+						class="2xl:gap-16 grid grid-cols-1 lg:gap-8 lg:grid-cols-3 md:gap-6 md:grid-cols-2 xl:gap-13"
+					>
+						<div class="residence__entry mb-10 lg:mb-0">
+							<figure class="residence__entry__teaser-img">
+								<img
+									src="./assets/images/residences/1.png"
+									alt="Image of House"
+								/>
+								<figcaption class="sr-only">
+									Image of House
+								</figcaption>
+							</figure>
+							<div class="residence__entry__data p-6 pt-4">
+								<div class="flex items-center mb-4 py-2 place">
+									San Francisco, California
+								</div>
+								<div
+									class="grid grid-cols-[1fr_1fr] gap-4 mb-6"
+								>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/bed-icon.png"
+											/>
+										</div>
+										<span>4 Rooms</span>
+									</div>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/ruler-icon.png"
+											/>
+										</div>
+										<span>3,500 sq ft</span>
+									</div>
+								</div>
+								<div
+									class="flex gap-x-6 items-end justify-between"
+								>
+									<button class="">Sign up</button>
+									<div class="price">$2,500,000</div>
+								</div>
+							</div>
+						</div>
+						<div class="residence__entry mb-10 lg:mb-0">
+							<figure class="residence__entry__teaser-img">
+								<img
+									src="./assets/images/residences/2.png"
+									alt="Image of House"
+								/>
+								<figcaption class="sr-only">
+									Image of House
+								</figcaption>
+							</figure>
+							<div class="residence__entry__data p-6 pt-4">
+								<div class="flex items-center mb-4 py-2 place">
+									Beverly Hills, California
+								</div>
+								<div
+									class="grid grid-cols-[1fr_1fr] gap-4 mb-6"
+								>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/bed-icon.png"
+											/>
+										</div>
+										<span>3 Rooms</span>
+									</div>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/ruler-icon.png"
+											/>
+										</div>
+										<span>1,500 sq ft</span>
+									</div>
+								</div>
+								<div
+									class="flex gap-x-6 items-end justify-between"
+								>
+									<button class="">Sign up</button>
+									<div class="price">$850,000</div>
+								</div>
+							</div>
+						</div>
+						<div class="residence__entry mb-10 lg:mb-0">
+							<figure class="residence__entry__teaser-img">
+								<img
+									src="./assets/images/residences/3.png"
+									alt="Image of House"
+								/>
+								<figcaption class="sr-only">
+									Image of House
+								</figcaption>
+							</figure>
+							<div class="residence__entry__data p-6 pt-4">
+								<div class="flex items-center mb-4 py-2 place">
+									Palo Alto, California
+								</div>
+								<div
+									class="grid grid-cols-[1fr_1fr] gap-4 mb-6"
+								>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/bed-icon.png"
+											/>
+										</div>
+										<span>6 Rooms</span>
+									</div>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/ruler-icon.png"
+											/>
+										</div>
+										<span>6 Rooms</span>
+									</div>
+								</div>
+								<div
+									class="flex gap-x-6 items-end justify-between"
+								>
+									<button class="">Sign up</button>
+									<div class="price">$3,700,000</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Why Choose Us -->
+			<section id="why-choose-us">
+				<div class="mx-auto max-w-[1320px] px-6">
+					<!-- Title -->
+					<h2
+						class="text-center font-montserrat text-[40px] font-extrabold leading-[140%] text-[#2B1B12]"
+					>
+						Why Choose Us
+					</h2>
+
+					<!-- Paragraph -->
+					<p
+						class="mx-auto mt-4 max-w-[629px] text-center font-montserrat text-[18px] font-bold leading-[160%] text-[#4F3527]"
+					>
+						Elevating Your Home Buying Experience with Expertise,
+						Integrity, and Unmatched Personalized Service
 					</p>
 				</div>
-				<div>
-					<h3 class="font-semibold mb-4">About</h3>
-					<ul class="space-y-2 text-sm">
-						<li>
-							<a href="#" class="hover:underline">Our Story</a>
-						</li>
-						<li><a href="#" class="hover:underline">Careers</a></li>
-						<li>
-							<a href="#" class="hover:underline">Our Team</a>
-						</li>
-						<li>
-							<a href="#" class="hover:underline">Resources</a>
-						</li>
-					</ul>
-				</div>
+			</section>
 
-				<div>
-					<h3 class="font-semibold mb-4">Support</h3>
-					<ul class="space-y-2 text-sm">
-						<li><a href="#" class="hover:underline">FAQ</a></li>
-						<li>
-							<a href="#" class="hover:underline">Contact Us</a>
-						</li>
-						<li>
-							<a href="#" class="hover:underline">Help Center</a>
-						</li>
-						<li>
-							<a href="#" class="hover:underline"
-								>Terms of Service</a
-							>
-						</li>
-					</ul>
+			<!-- Why Choose Us Cards -->
+
+			<section id="why-choose-us-cards" class="mt-16 pb-24">
+				<div class="mx-auto flex max-w-[1320px] px-6 gap-6">
+					<!-- Card 1 -->
+					<div
+						class="h-[268px] w-[275px] rounded-[18px] bg-[#DDC7BB] shadow-[0_4px_30px_rgba(43,27,18,0.12)]"
+					>
+						<img
+							src="assets/images/map-pin.svg"
+							alt="Expert Guidance"
+							class="ml-[39px] mt-[46px] h-[52px] w-[53px]"
+						/>
+
+						<h3
+							class="ml-6 mt-9 h-[22px] w-[158px] font-montserrat text-[18px] font-bold leading-[100%] text-[#2B1B12]"
+						>
+							Expert Guidance
+						</h3>
+
+						<p
+							class="ml-6 mt-3 h-[63px] w-[227px] font-montserrat text-[16px] font-semibold leading-[130%] text-[#4F3527]"
+						>
+							Benefit from our team’s seasoned expertise for a
+							smooth buying experience
+						</p>
+					</div>
+
+					<!-- Card 2 -->
+					<div
+						class="h-[268px] w-[275px] rounded-[18px] bg-[#DDC7BB] shadow-[0_4px_30px_rgba(43,27,18,0.12)]"
+					>
+						<img
+							src="assets/images/service.svg"
+							alt="Personalized Service"
+							class="ml-[39px] mt-[46px] h-[52px] w-[53px]"
+						/>
+
+						<h3
+							class="ml-6 mt-9 h-[22px] w-[227px] font-montserrat text-[18px] font-bold leading-[100%] text-[#2B1B12]"
+						>
+							Personalized Service
+						</h3>
+
+						<p
+							class="ml-6 mt-3 h-[63px] w-[227px] font-montserrat text-[16px] font-semibold leading-[130%] text-[#4F3527]"
+						>
+							Our services adapt to your unique needs, making your
+							journey stress-free
+						</p>
+					</div>
+
+					<!-- Card 3 -->
+					<div
+						class="h-[268px] w-[275px] rounded-[18px] bg-[#DDC7BB] shadow-[0_4px_30px_rgba(43,27,18,0.12)]"
+					>
+						<img
+							src="assets/images/document.svg"
+							alt="Transparent Process"
+							class="ml-[39px] mt-[46px] h-[52px] w-[53px]"
+						/>
+
+						<h3
+							class="ml-6 mt-9 h-[22px] w-[227px] font-montserrat text-[18px] font-bold leading-[100%] text-[#2B1B12]"
+						>
+							Transparent Process
+						</h3>
+
+						<p
+							class="ml-6 mt-3 h-[63px] w-[227px] font-montserrat text-[16px] font-semibold leading-[130%] text-[#4F3527]"
+						>
+							Stay informed with our clear and honest approach to
+							buying your home
+						</p>
+					</div>
+
+					<!-- Card 4 -->
+					<div
+						class="h-[268px] w-[275px] rounded-[18px] bg-[#DDC7BB] shadow-[0_4px_30px_rgba(43,27,18,0.12)]"
+					>
+						<img
+							src="assets/images/handshake.svg"
+							alt="Exceptional Support"
+							class="ml-[39px] mt-[46px] h-[52px] w-[53px]"
+						/>
+
+						<h3
+							class="ml-6 mt-9 h-[22px] w-[227px] font-montserrat text-[18px] font-bold leading-[100%] text-[#2B1B12]"
+						>
+							Exceptional Support
+						</h3>
+
+						<p
+							class="ml-6 mt-3 h-[63px] w-[227px] font-montserrat text-[16px] font-semibold leading-[130%] text-[#4F3527]"
+						>
+							Providing peace of mind with our responsive and
+							attentive customer service
+						</p>
+					</div>
 				</div>
-				<div>
-					<h3 class="font-semibold mb-4">Find Us</h3>
-					<ul class="space-y-2 text-sm">
-						<li><a href="#" class="hover:underline">Events</a></li>
-						<li>
-							<a href="#" class="hover:underline">Locations</a>
-						</li>
-						<li>
-							<a href="#" class="hover:underline">Newsletter</a>
-						</li>
-					</ul>
+			</section>
+
+			<!-- ========================= -->
+			<!-- Behzad Bereich END -->
+			<!-- ========================= -->
+
+			<!-- ========================= -->
+			<!-- Roman Bereich START -->
+			<!-- ========================= -->
+
+			<!-- Our Popular Residences -->
+			<section id="residences">
+				<div class="mx-auto max-w-[1320px] py-16 px-6 xl:py-24">
+					<div class="mb-10 md:mb-13 xl:mb-16">
+						<p class="h2 text-center">Our Popular Residences</p>
+					</div>
+					<div
+						id=""
+						class="2xl:gap-16 grid grid-cols-1 lg:gap-8 lg:grid-cols-3 md:gap-6 md:grid-cols-2 xl:gap-13"
+					>
+						<div class="residence__entry mb-10 lg:mb-0">
+							<figure class="residence__entry__teaser-img">
+								<img
+									src="./assets/images/residences/1.png"
+									alt="Image of House"
+								/>
+								<figcaption class="sr-only">
+									Image of House
+								</figcaption>
+							</figure>
+							<div class="residence__entry__data p-6 pt-4">
+								<div class="flex items-center mb-4 py-2 place">
+									San Francisco, California
+								</div>
+								<div
+									class="grid grid-cols-[1fr_1fr] gap-4 mb-6"
+								>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/bed-icon.png"
+											/>
+										</div>
+										<span>4 Rooms</span>
+									</div>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/ruler-icon.png"
+											/>
+										</div>
+										<span>3,500 sq ft</span>
+									</div>
+								</div>
+								<div
+									class="flex gap-x-6 items-end justify-between"
+								>
+									<button class="">Sign up</button>
+									<div class="price">$2,500,000</div>
+								</div>
+							</div>
+						</div>
+						<div class="residence__entry mb-10 lg:mb-0">
+							<figure class="residence__entry__teaser-img">
+								<img
+									src="./assets/images/residences/2.png"
+									alt="Image of House"
+								/>
+								<figcaption class="sr-only">
+									Image of House
+								</figcaption>
+							</figure>
+							<div class="residence__entry__data p-6 pt-4">
+								<div class="flex items-center mb-4 py-2 place">
+									Beverly Hills, California
+								</div>
+								<div
+									class="grid grid-cols-[1fr_1fr] gap-4 mb-6"
+								>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/bed-icon.png"
+											/>
+										</div>
+										<span>3 Rooms</span>
+									</div>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/ruler-icon.png"
+											/>
+										</div>
+										<span>1,500 sq ft</span>
+									</div>
+								</div>
+								<div
+									class="flex gap-x-6 items-end justify-between"
+								>
+									<button class="">Sign up</button>
+									<div class="price">$850,000</div>
+								</div>
+							</div>
+						</div>
+						<div class="residence__entry mb-10 lg:mb-0">
+							<figure class="residence__entry__teaser-img">
+								<img
+									src="./assets/images/residences/3.png"
+									alt="Image of House"
+								/>
+								<figcaption class="sr-only">
+									Image of House
+								</figcaption>
+							</figure>
+							<div class="residence__entry__data p-6 pt-4">
+								<div class="flex items-center mb-4 py-2 place">
+									Palo Alto, California
+								</div>
+								<div
+									class="grid grid-cols-[1fr_1fr] gap-4 mb-6"
+								>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/bed-icon.png"
+											/>
+										</div>
+										<span>6 Rooms</span>
+									</div>
+									<div class="flex items-center">
+										<div class="icon">
+											<img
+												src="./assets/images/ruler-icon.png"
+											/>
+										</div>
+										<span>$3,700,000</span>
+									</div>
+								</div>
+								<div
+									class="flex gap-x-6 items-end justify-between"
+								>
+									<button class="">Sign up</button>
+									<div class="price">$3,700,000</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- What People Say About Dwello -->
+			<section id="testimonials" class="bg-[#fef7f2]">
+				<div class="max-w-[1320px] mx-auto px-6 py-16">
+					<div class="mb-10 md:mb-13 xl:mb-16">
+						<p class="h2 text-center">
+							What People Say<br />About Dwello
+						</p>
+					</div>
+					<div
+						id=""
+						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 xl:gap-10"
+					>
+						<div class="testimonials__entry mb-10 lg:mb-0">
+							<figure class="testimonials__entry__teaser-img">
+								<img
+									src="./assets/images/rooms/1.jpg"
+									alt="Image of House"
+								/>
+								<figcaption class="sr-only">
+									Image of House
+								</figcaption>
+							</figure>
+							<div class="testimonials__entry__data p-6">
+								<div
+									class="grid grid-cols-4 grid-cols-[1fr_4fr] gap-4 mb-6"
+								>
+									<figure
+										class="rounded-full overflow-hidden"
+									>
+										<img
+											class="rounded-full"
+											src="./assets/images/rooms/1-1.jpg"
+											alt="Portrait_Sarah Nguyen"
+										/>
+										<figcaption class="sr-only">
+											Person
+										</figcaption>
+									</figure>
+									<div class="flex flex-col justify-center">
+										<div class="name">Sarah Nguyen</div>
+										<div
+											class="flex items-baseline justify-between"
+										>
+											<p class="place">San Francisco</p>
+											<div class="rating">
+												<span>
+													<svg
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7.0891 0.552822C7.32858 -0.184227 8.37131 -0.184227 8.61079 0.552822L9.91547 4.56823C10.0226 4.89784 10.3297 5.12101 10.6763 5.12101H14.8984C15.6733 5.12101 15.9956 6.1127 15.3686 6.56822L11.9529 9.04988C11.6725 9.2536 11.5552 9.61469 11.6623 9.94431L12.967 13.9597C13.2064 14.6968 12.3629 15.3097 11.7359 14.8541L8.32017 12.3725C8.03978 12.1688 7.66011 12.1688 7.37972 12.3725L3.96401 14.8541C3.33704 15.3097 2.49346 14.6968 2.73294 13.9597L4.03762 9.94431C4.14472 9.61469 4.02739 9.2536 3.747 9.04988L0.331298 6.56822C-0.295673 6.1127 0.0265479 5.12101 0.801527 5.12101H5.02357C5.37015 5.12101 5.67732 4.89784 5.78442 4.56823L7.0891 0.552822Z"
+															fill="#FFC71E"
+														/>
+													</svg>
+												</span>
+												<span>5.0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Beatae doloribus
+										voluptate molestiae saepe,
+										necessitatibus vitae deserunt dolorum
+										rerum impedit eos, tempore soluta
+										obcaecati dolores sapiente sed fugit
+										placeat? Odit, distinctio.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="testimonials__entry mb-10 lg:mb-0">
+							<figure class="testimonials__entry__teaser-img">
+								<img
+									src="./assets/images/rooms/2.jpg"
+									alt="Image of House"
+								/>
+								<figcaption class="sr-only">
+									Image of House
+								</figcaption>
+							</figure>
+							<div class="testimonials__entry__data p-6">
+								<div
+									class="grid grid-cols-4 grid-cols-[1fr_4fr] gap-4 mb-6"
+								>
+									<figure
+										class="rounded-full overflow-hidden"
+									>
+										<img
+											class="rounded-full"
+											src="./assets/images/rooms/2-1.jpg"
+											alt="Portrait_Sarah Nguyen"
+										/>
+										<figcaption class="sr-only">
+											Person
+										</figcaption>
+									</figure>
+									<div class="flex flex-col justify-center">
+										<div class="name">
+											Michael Rodriguez
+										</div>
+										<div
+											class="flex items-baseline justify-between"
+										>
+											<p class="place">San Diego</p>
+											<div class="rating">
+												<span>
+													<svg
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7.0891 0.552822C7.32858 -0.184227 8.37131 -0.184227 8.61079 0.552822L9.91547 4.56823C10.0226 4.89784 10.3297 5.12101 10.6763 5.12101H14.8984C15.6733 5.12101 15.9956 6.1127 15.3686 6.56822L11.9529 9.04988C11.6725 9.2536 11.5552 9.61469 11.6623 9.94431L12.967 13.9597C13.2064 14.6968 12.3629 15.3097 11.7359 14.8541L8.32017 12.3725C8.03978 12.1688 7.66011 12.1688 7.37972 12.3725L3.96401 14.8541C3.33704 15.3097 2.49346 14.6968 2.73294 13.9597L4.03762 9.94431C4.14472 9.61469 4.02739 9.2536 3.747 9.04988L0.331298 6.56822C-0.295673 6.1127 0.0265479 5.12101 0.801527 5.12101H5.02357C5.37015 5.12101 5.67732 4.89784 5.78442 4.56823L7.0891 0.552822Z"
+															fill="#FFC71E"
+														/>
+													</svg>
+												</span>
+												<span>4.5</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Beatae doloribus
+										voluptate molestiae saepe,
+										necessitatibus vitae deserunt dolorum
+										rerum impedit eos, tempore soluta
+										obcaecati dolores sapiente sed fugit
+										placeat? Odit, distinctio.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="testimonials__entry mb-10 lg:mb-0">
+							<figure class="testimonials__entry__teaser-img">
+								<img
+									src="./assets/images/rooms/3.jpg"
+									alt="Image of House"
+								/>
+								<figcaption class="sr-only">
+									Image of House
+								</figcaption>
+							</figure>
+							<div class="testimonials__entry__data p-6">
+								<div
+									class="grid grid-cols-4 grid-cols-[1fr_4fr] gap-4 mb-6"
+								>
+									<figure
+										class="rounded-full overflow-hidden"
+									>
+										<img
+											class="rounded-full"
+											src="./assets/images/rooms/3-1.jpg"
+											alt="Portrait_Sarah Nguyen"
+										/>
+										<figcaption class="sr-only">
+											Person
+										</figcaption>
+									</figure>
+									<div class="flex flex-col justify-center">
+										<div class="name">Emily Johnson</div>
+										<div
+											class="flex items-baseline justify-between"
+										>
+											<p class="place">Los Angeles</p>
+											<div class="rating">
+												<span>
+													<svg
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7.0891 0.552822C7.32858 -0.184227 8.37131 -0.184227 8.61079 0.552822L9.91547 4.56823C10.0226 4.89784 10.3297 5.12101 10.6763 5.12101H14.8984C15.6733 5.12101 15.9956 6.1127 15.3686 6.56822L11.9529 9.04988C11.6725 9.2536 11.5552 9.61469 11.6623 9.94431L12.967 13.9597C13.2064 14.6968 12.3629 15.3097 11.7359 14.8541L8.32017 12.3725C8.03978 12.1688 7.66011 12.1688 7.37972 12.3725L3.96401 14.8541C3.33704 15.3097 2.49346 14.6968 2.73294 13.9597L4.03762 9.94431C4.14472 9.61469 4.02739 9.2536 3.747 9.04988L0.331298 6.56822C-0.295673 6.1127 0.0265479 5.12101 0.801527 5.12101H5.02357C5.37015 5.12101 5.67732 4.89784 5.78442 4.56823L7.0891 0.552822Z"
+															fill="#FFC71E"
+														/>
+													</svg>
+												</span>
+												<span>5.0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Beatae doloribus
+										voluptate molestiae saepe,
+										necessitatibus vitae deserunt dolorum
+										rerum impedit eos, tempore soluta
+										obcaecati dolores sapiente sed fugit
+										placeat? Odit, distinctio.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						id="btns"
+						class="flex gap-6 justify-center lg:mt-12 md:gap-7 md:mt-3 xl:gap-8"
+					>
+						<button class="btn">
+							<svg
+								width="11"
+								height="19"
+								viewBox="0 0 11 19"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1 9.48523L9.48528 0.999948"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M9.48529 17.6776L1.00001 9.19233"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</button>
+						<button class="btn">
+							<svg
+								width="11"
+								height="19"
+								viewBox="0 0 11 19"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M9.48529 9.48523L1.00001 0.999948"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M1 17.6776L9.48528 9.19233"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Questions / Help Form -->
+			<section id="help-form">
+				<div
+					class="2xl:py-38 flex flex-col items-center max-w-[1320px] md:py-25 mx-auto px-6 py-20 xl:py-30"
+				>
+					<div class="mb-10">
+						<p class="h2 text-center">
+							Do You Have Any Questions?<br />
+							Get Help From Us
+						</p>
+					</div>
+					<div
+						id="help-form__links"
+						class="flex flex-col lg:gap-x-12 mb-10 md:gap-x-9 md:mb-13 sm:flex-row sm:gap-x-7 xl:gap-x-14"
+					>
+						<div class="link-wrapper">
+							<a href="#">Chat live with our support team</a>
+						</div>
+
+						<div class="link-wrapper">
+							<a href="#">Browse our FAQ</a>
+						</div>
+					</div>
+					<div
+						id="help-form__form"
+						class="md:mb-5 flex flex-col gap-x-4 items-center justify-between sm:flex-row sm:items-stretch sm:max-w-[600px] w-full"
+					>
+						<div class="input-wrapper mb-6 sm:mb-0 w-full">
+							<input
+								type="text"
+								class="h-full w-full"
+								placeholder="Enter your email address..."
+							/>
+						</div>
+						<button class="max-w-min" type="submit">Submit</button>
+					</div>
+				</div>
+			</section>
+			<!-- ========================= -->
+			<!-- Roman Bereich END -->
+			<!-- ========================= -->
+		</main>
+		<footer class="text-dark-brown">
+			<div class="mx-auto max-w-[1320px] py-16 px-6 xl:py-24">
+				<div
+					class="grid gap-x-6 gap-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6"
+				>
+					<div
+						class="footer__col col-span-1 sm:col-span-2 lg:col-span-4 xl:col-span-2 xl:pr-6"
+					>
+						<div id="footer__logo__container">
+							<a href="#">
+								<img
+									src="assets/images/footer-logo.png"
+									alt="Dwello Logo"
+								/>
+							</a>
+						</div>
+						<div id="footer__slogan">
+							<p>
+								Bringing you closer to your dream home, one
+								click at a time.
+							</p>
+						</div>
+					</div>
+					<div class="footer__col">
+						<p class="footer__col__heading">About</p>
+						<a href="#">Our Story</a>
+						<a href="#">Careers</a>
+						<a href="#">Our Teams</a>
+						<a href="#">Resources</a>
+					</div>
+					<div class="footer__col">
+						<p class="footer__col__heading">Support</p>
+						<a href="#">FAQ</a>
+						<a href="#">Contact Us</a>
+						<a href="#">Help Center</a>
+						<a href="#">Terms of Service</a>
+					</div>
+					<div class="footer__col">
+						<p class="footer__col__heading">Find Us</p>
+						<a href="#">Events</a>
+						<a href="#">Locations</a>
+						<a href="#">Newsletter</a>
+					</div>
+					<div id="social" class="footer__col">
+						<p class="footer__col__heading">Our Social</p>
+						<a href="#"
+							><span
+								><img
+									src="./assets/images/footer-inst.png" /></span
+							>Instagram</a
+						>
+						<a href="#"
+							><span
+								><img
+									src="./assets/images/footer-fb.png" /></span
+							>Facebook</a
+						>
+						<a href="#"
+							><span
+								><img
+									src="./assets/images/footer-x.png" /></span
+							>Twitter (x)</a
+						>
+					</div>
 				</div>
 
 				<div>
@@ -507,8 +1072,9 @@
 						</li>
 					</ul>
 				</div>
-			</div>-->
-    </footer>
-    <!-- / ROMAN BEREICH -->
-  </body>
+			</div>
+			-->
+		</footer>
+		<!-- / ROMAN BEREICH -->
+	</body>
 </html>
